@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reservaciones</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <link rel="stylesheet" href="interfaz.css">
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">RESERVATIONS</h1>
+        <p class="lead">Schedule of a room reservations</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Samanta">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Last Name:</label>
+                        <input type="text" class="form-control" id="lName" placeholder="Rubio">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Num of rooms:</label>
+                        <input type="text" class="form-control" id="rooms" placeholder="200">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Date of reservation:</label>
+                        <input type="date" class="form-control" id="dReservation" placeholder="DD/MM/YYYY">
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-outline-secondary" id="btn1">Reserve</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-6">
+                <table id="info" class="table">
+                    <thead>Total reserved rooms</thead>
+                    <tbody>
+                        <tr>
+                            <td id="totalRes"></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-12">
+            <table class="table" id="list">
+                <thead> Reservations </thead>
+                <tbody>
+                    <tr>
+                        <td>Item</td>
+                        <td>Name</td>
+                        <td>Last name</td>
+                        <td>Num of rooms</td>
+                        <td>Date of reservation</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="./main.js" type="module"></script>
+</html>
